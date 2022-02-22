@@ -1,5 +1,4 @@
-<<<<<<< HEAD
+hello this is jui
 Jayesh Saindane is here
-=======
 this is edited by jitesh
->>>>>>> main
+this is jui editting 2nd time
