@@ -54,3 +54,26 @@ mainbox2{
   75%  {background-color:green; left:0px; top:200px; border-radius: 25%;}
   100% {background-color:red; left:0px; top:0px; border-radius: 0%;}
 }
+.square1 {
+  width: 100px; height: 100px; background-color: coral; margin: 100px;
+   text-align: center; border: 2px solid black; 
+   animation: move1 5s infinite alternate;
+  position: relative;
+}
+.circle {
+  width: 100px; height: 100px; background-color: coral; margin: 100px;
+   text-align: center; border: 2px solid black; border-radius: 50% 50% 50% 50%;
+}
+
+.circle {
+  animation: move2 5s infinite alternate;
+  position: relative;
+}
+@keyframes move1 {
+  0% {top: 0px;}
+  100% {top: 300px;}
+}
+@keyframes move2 {
+  0% {top: 300px;}
+  100% {top: 0px;}
+}
