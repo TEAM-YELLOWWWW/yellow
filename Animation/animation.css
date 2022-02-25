@@ -1,4 +1,31 @@
+mainbox2{
+  width: 100px;height: 100px;background-color: coral;margin: 100px;
+  display: inline-block;text-align: center;border: 2px solid black;
+  line-height: 50px;color: white;
+}
+.square2{
+  animation:roller1 5s infinite alternate;
+}
+.square3{
+  animation:roller2 5s infinite alternate;
+}
+.square4{
+  animation:roller3 5s infinite alternate;
+}
 
+
+@keyframes roller1 {
+  0% {transform: rotate(0deg);background-color: blue;}
+  100%{transform: rotate(360deg);background-color: red;}
+}
+@keyframes roller2 {
+  0% {transform: rotate(0deg);;background-color: blue;}
+  100%{transform: rotate(360deg);}
+}
+@keyframes roller3 {
+  0% {transform: rotate(0deg);;background-color: blue;}
+  100%{transform: rotate(360deg);}
+}
 .mainBox3{
   width: 250px;
   height: 250px;
