@@ -1,79 +1,194 @@
-mainbox2{
-  width: 100px;height: 100px;background-color: coral;margin: 100px;
-  display: inline-block;text-align: center;border: 2px solid black;
-  line-height: 50px;color: white;
-}
-.square2{
-  animation:roller1 5s infinite alternate;
-}
-.square3{
-  animation:roller2 5s infinite alternate;
-}
-.square4{
-  animation:roller3 5s infinite alternate;
-}
-
-
-@keyframes roller1 {
-  0% {transform: rotate(0deg);background-color: blue;}
-  100%{transform: rotate(360deg);background-color: red;}
-}
-@keyframes roller2 {
-  0% {transform: rotate(0deg);;background-color: blue;}
-  100%{transform: rotate(360deg);}
-}
-@keyframes roller3 {
-  0% {transform: rotate(0deg);;background-color: blue;}
-  100%{transform: rotate(360deg);}
-}
-.mainBox3{
-  width: 250px;
-  height: 250px;
-  background-color: red;
-  position: relative;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: 3;
-  text-align: center;
+body {
+  padding: 50px;
+  margin: 10px;
+  margin-left: 110px;
   margin-top: 50px;
+  width: 1600px;
+  height: 800px;
+  border: 20px solid black;
   border-radius: 10px;
+  background-color: bisque;
+}
+
+/* MAIN BOX 1 */
+.mainBox1 {
+  width: 640px;
+  height: 670px;
   border: 5px solid black;
-  margin-left: 50%;
+  padding: 50px;
+  border-radius: 10px;
+  float: left;
+  background-image: linear-gradient(red,yellow);
 }
 
-.square5{
-  line-height: 200px;
-  font-size: 50px;
-  color: whitesmoke;
-}
-
-@keyframes example {
-  0%   {background-color:red; left:0px; top:0px; border-radius: 0%;}
-  25%  {background-color:yellow; left:200px; top:0px; border-radius: 25%;}
-  50%  {background-color:blue; left:200px; top:200px; border-radius: 50%;}
-  75%  {background-color:green; left:0px; top:200px; border-radius: 25%;}
-  100% {background-color:red; left:0px; top:0px; border-radius: 0%;}
-}
 .square1 {
-  width: 100px; height: 100px; background-color: coral; margin: 100px;
-   text-align: center; border: 2px solid black; 
-   animation: move1 5s infinite alternate;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: red;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid black;
+  animation: move1 5s infinite alternate;
   position: relative;
+  float: left;
+  font-weight: bold;
 }
 .circle {
-  width: 100px; height: 100px; background-color: coral; margin: 100px;
-   text-align: center; border: 2px solid black; border-radius: 50% 50% 50% 50%;
-}
-
-.circle {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: red;
+  margin: 10px;
+  margin-left: 400px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 50%;
+  float: left;
   animation: move2 5s infinite alternate;
   position: relative;
+  font-weight: bold;
 }
+
 @keyframes move1 {
-  0% {top: 0px;}
-  100% {top: 300px;}
+  0% {
+    top: 0px;
+    background-color: yellow;
+    color: red;
+  }
+  100% {
+    top: 500px;
+    border-radius: 50%;
+    background-color: red;
+    color: yellow; 
+  }
 }
+
 @keyframes move2 {
-  0% {top: 300px;}
-  100% {top: 0px;}
+  0% {
+    top: 500px;
+      border-radius: 50%; 
+      background-color: red;
+      color: yellow; 
+  }
+  100% {
+    top: 0px;
+     border-radius: 0%;
+      background-color: yellow;
+      color: red;
+  }
 }
+
+
+/* OUTER BOX */
+.outerbox {
+  width: 640px;
+  height: 670px;
+  margin-left: 100px;
+  border: 5px solid black;
+  padding: 50px;
+  border-radius: 10px;
+  float: left;
+}
+
+/* MAIN BOX 2 */
+.mainBox2 {
+  width: 620px;
+  height: 300px;
+  background-image: radial-gradient(red, yellow, green);
+  text-align: center;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+
+.square2,
+.square3,
+.square4 {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: 50px;
+  margin-top: 100px;
+  background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+  border-radius: 10px;
+  border: 2px solid black;
+  float: left;
+  position: relative;
+  animation: mainbox2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-weight: bold;
+}
+
+@keyframes mainbox2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 50%;
+  }
+}
+
+/* MAIN BOX 3 */
+.mainBox3 {
+  width: 620px;
+  height: 300px;
+  margin-top: 50px;
+  background-image: linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet);
+  text-align: center;
+  border-radius: 25px;
+  border: 5px solid black;
+}
+
+.square5 {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: red;
+  color: whitesmoke;
+  animation-name: mainbox3;
+  position: relative;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  font-weight: bold;
+}
+
+@keyframes mainbox3 {
+  0% {
+    background-image: linear-gradient(violet,indigo);
+    left: 0px;
+    top: 0px;
+    border-radius: 25% 0% 0% 0%;
+  }
+  25% {
+    background-image: linear-gradient(blue,green);
+    left: 490px;
+    top: 0px;
+    border-radius: 0% 25% 0% 0%;
+  }
+  50% {
+    background-image: linear-gradient(yellow,orange);
+    left: 490px;
+    top: 170px;
+    border-radius: 0% 0% 25% 0%;
+  }
+  75% {
+    background-image: linear-gradient(red,orange);
+    left: 0px;
+    top: 170px;
+    border-radius: 0% 0% 0% 25%;
+  }
+  100% {
+    background-image: linear-gradient(yellow,green);
+    left: 0px;
+    top: 0px;
+    border-radius: 25% 0% 0% 0%;
+  }
+}
+
